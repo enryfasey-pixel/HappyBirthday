@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>For Twishu ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Dancing+Script:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<main>
+
+<section class="s" id="s1" data-gap="800">
+<h1 class="rv">Hey <span data-k="girlfriend"></span>... ❤️</h1>
+<p class="hw rv">I made something for you...</p>
+<p class="rv">But you have to open it yourself. 👀</p>
+<button class="btn rv" data-go="s2">Open My Surprise 💗</button>
+</section>
+
+<section class="s" id="s2" hidden>  
+<h1 class="rv">Happy Birthday, <span data-k="girlfriend"></span> ❤️</h1>
+<p class="hw rv">22 • 10 • 2003</p>
+<img class="fr rv" data-p="5" style="object-position:50% 30%">
+<p class="rv">The day the world got a little more beautiful. 🌷</p>
+<p class="rv">And somehow, years later, you became my Laadli. ❤️</p>
+<button class="btn rv" data-go="s3">Okay Laadli... there's more 💕</button>
+</section>
+
+<section class="s" id="s3" hidden>
+<h2 class="rv">Thodi Si Humari Kahaani ❤️</h2>
+<p class="hw rv">2023...</p>
+<img class="fr rv" data-p="7" style="object-position:50% 40%">
+<p class="rv">Pata nahi kab normal si life mein ek Twishu naam ki ladki itni important ho gayi.</p>
+<p class="hw rv">Caring bhi...</p><p class="hw rv">Cute bhi...</p><p class="hw rv">Thodi si nakhrebaaz bhi...</p>
+<p class="rv">Aur haan... dumbo toh ho hi. <span class="lol">😂</span>❤️</p>
+<p class="hw rv">But somehow, meri favorite dumbo. ❤️</p>
+<button class="btn rv" data-go="s4">Yaadein dekhein? 🌷</button>
+</section>
+
+<section class="s" id="s4" hidden>
+<h2>Our Memories 🌷</h2>
+<div class="scrap" style="--a:-2deg"><span class="pin">📍</span><img data-p="1" style="object-position:50% 70%">
+<h3 class="hw">Dehradun...</h3><p>Ek trip, bahut saari yaadein, aur tumhare saath woh moments jo simple hoke bhi special ban gaye. ❤️</p></div>
+<div class="scrap" style="--a:2deg"><span class="pin">🎓</span><img data-p="3" style="object-position:50% 25%">
+<h3 class="hw">College Farewell 🎓</h3><p>Ek aur memory jisme tum thi... aur isliye woh memory automatically special ho gayi.</p></div>
+<button class="btn" data-go="s5">Aur photos 📷</button>
+</section>
+
+<section class="s" id="s5" hidden>
+<h2>Tap a photo 📷</h2>
+<div class="wall">
+<figure class="po" style="--a:-4deg"><img data-p="8" style="object-position:50% 55%"><figcaption class="cap"></figcaption></figure>
+<figure class="po" style="--a:3deg"><img data-p="2" style="object-position:60% 50%"><figcaption class="cap"></figcaption></figure>
+<figure class="po" style="--a:-2deg"><img data-p="4" style="object-position:78% 50%"><figcaption class="cap"></figcaption></figure>
+</div>
+<button class="btn" data-go="s6">Next 💌</button>
+</section>
+
+<section class="s" id="s6" hidden>
+<h2>Twishu, choose one... 👀💌</h2>
+<div class="envs" id="envs"></div>
+<button class="btn" data-go="s7">Next 💗</button>
+</section>
+
+<section class="s" id="s7" hidden>
+<h2>Nona ki Laadli ke liye ek chhota sa test 👀❤️</h2>
+<p>Itne saare hearts mein se mera heart find karo... <small>(hint: ribbon wala 😉)</small></p>
+<div id="hg"></div>
+<div id="win" hidden><p class="hw">Mil gaya? Obviously... tum toh mera heart already le chuki ho. 😌❤️</p>
+<p>Aur haan, return policy available nahi hai. 😂</p>
+<button class="btn" data-go="s8">Next 🎵</button></div>
+</section>
+
+<section class="s" id="s8" hidden>
+<h2>Press Play... ❤️</h2>
+<p class="hw">Bas ek gaana... aur thodi si humari yaadein.</p>
+<button class="btn" id="play" aria-label="Play or pause the song">▶ Play Dil Diyan Gallan</button>
+<div class="bars" id="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+<p id="mnote" hidden><small>(Add music.mp3 inside the assets folder to hear the song 🎵)</small></p>
+<audio id="aud" src="assets/music.mp3" preload="none" loop></audio>
+<button class="btn" data-go="s9">Next 💌</button>
+</section>
+
+<section class="s" id="s9" hidden>
+<p class="hw">Twishu... ye thoda serious hai. ❤️</p>
+<button class="btn" id="openL">Open My Letter 💌</button>
+<article id="lt" class="paper" aria-live="polite">
+<h2>To My Laadli, Twishu ❤️</h2>
+<p>Twishu... 2023 mein jab ye sab shuru hua, tab maine kabhi socha nahi tha ki tum meri life ka itna important hissa ban jaogi. Dheere dheere tumhari care, tumhari cuteness, aur haan, tumhare nakhre bhi... sab meri aadat ban gaye. 😌</p>
+<p>Tum itni caring ho ki kabhi kabhi sochta hoon, maine aisa kya kiya jo tum mili. Aur dumbo toh tum ho hi 😂 — par meri wali dumbo, jiske bina sab adhoora lagta hai.</p>
+<p>Dehradun ki woh trip simple si thi, par tumhare saath har pal special tha. Aur college farewell... us din tum saree mein aayi aur mujhe samajh hi nahi aaya kya bolun. Ye yaadein mere dil mein permanent save hain. ❤️</p>
+<p>Thank you, Laadli — mujhe itna pyaar karne ke liye, mujhe jhelne ke liye, aur mere saath rehne ke liye. Mujhe tumhare saath abhi aur bahut saari memories banani hain, aur main chahta hoon ki tum hamesha khush raho, hasti raho.</p>
+<p><b>Happy Birthday, meri Laadli. ❤️</b></p>
+<p class="hw">Always yours,<br>Rohan ❤️</p>
+<button class="btn" data-go="s10">Next 🌹</button>
+</article>
+</section>
+
+<section class="s" id="s10" hidden>
+<h2>One Rose For My Rose 🌹</h2>
+<p><small>Tap the rose</small></p>
+<svg id="rose" viewBox="0 0 200 260" role="button" tabindex="0" aria-label="Tap the rose to bloom">
+<path d="M100 130V252" stroke="#2e7d32" stroke-width="6" fill="none"/>
+<path d="M100 210q-42-8-52-42 38 2 52 42z" fill="#388e3c"/><path d="M100 190q40-6 50-38-36 0-50 38z" fill="#43a047"/>
+<g class="petals"><ellipse cx="100" cy="62" rx="26" ry="38" fill="#b0123f"/><ellipse cx="100" cy="62" rx="26" ry="38" fill="#c2185b"/><ellipse cx="100" cy="62" rx="26" ry="38" fill="#a30f3a"/><ellipse cx="100" cy="62" rx="26" ry="38" fill="#d81b60"/><ellipse cx="100" cy="62" rx="26" ry="38" fill="#b0123f"/></g>
+<circle cx="100" cy="98" r="16" fill="#7a0a2c"/></svg>
+<p class="hw" id="r1" hidden>A rose for the girl who deserves a whole garden. 🌹❤️</p>
+<p id="r2" hidden>Actually... ek rose se kaam nahi chalega. 😂</p>
+<div id="roses" class="roses" hidden>🌹🌹🌹🌹🌹🌹🌹🌹🌹</div>
+<button class="btn" id="r3" data-go="s11" hidden>Next 🥹</button>
+</section>
+
+<section class="s dark" id="s11" data-gap="1200" hidden>
+<img class="fr beat" data-p="6" style="object-position:50% 40%">
+<p class="hw rv">I've seen a lot of beautiful moments...</p>
+<p class="hw rv">But somehow...</p>
+<p class="hw rv big">My favorite ones always have you in them. ❤️</p>
+<p class="rv">And if I had to choose you all over again...</p>
+<p class="hw rv big">I'd still choose you.</p>
+<p class="rv">Every single time. ❤️</p>
+<button class="btn rv" data-go="s12">One more thing... 🎁</button>
+</section>
+
+<section class="s" id="s12" hidden>
+<p class="hw">Twishu... wait.</p>
+<p>Ek last surprise baaki hai. 🎁</p>
+<button class="gift" id="gift" aria-label="Open the gift">🎁<span>Open It ❤️</span></button>
+<div id="fin" data-gap="900" hidden>
+<p class="hw rv">You're not just my favorite person...</p>
+<p class="hw rv">You're my favorite part of every day. ❤️</p>
+<h1 class="rv">Happy Birthday, Twishu 🌹🎂❤️</h1>
+<p class="rv">Love, Nona ❤️</p>
+<p class="rv"><small>Made especially for my Laadli.</small></p>
+<button class="btn rv" id="psst">Just... one last click 👀</button>
+<div id="sec" hidden><h2>Lots of love cutu Twinkle ❤️</h2><p>And yes... your Nona really made all this for you. 🥹</p></div>
+</div>
+</section>
+</main>
+<div id="lb" hidden role="dialog" aria-label="Photo"><figure><img alt=""><figcaption class="hw"></figcaption></figure></div>
+<script src="script.js"></script></body></html>
